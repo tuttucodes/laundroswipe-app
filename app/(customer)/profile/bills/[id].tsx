@@ -132,7 +132,7 @@ export default function CustomerBillDetail() {
             </Text>
           ) : null}
           <Text className="mt-3 text-center text-xs text-ink-2">
-            Note: Customers must count and check their clothes at collection.
+            Note: Please count and check all clothes at collection. The vendor will not be liable for shortages or damage reported later.
           </Text>
         </Container>
       </ScrollView>

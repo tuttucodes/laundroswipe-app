@@ -154,7 +154,7 @@ export function buildVendorReceiptEscPos(paper: PaperSize, input: VendorReceiptI
     .align('center')
     .bold(false)
     .text(input.footer ?? 'Thank you!');
-  for (const line of wrapReceiptText('Note: Customers must count and check their clothes at collection.', w)) {
+  for (const line of wrapReceiptText('Note: Please count and check all clothes at collection. The vendor will not be liable for shortages or damage reported later.', w)) {
     b.text(line);
   }
   b.feed(3).cut(false);
@@ -218,7 +218,7 @@ export function formatVendorReceiptEscPosPlain(
   }
   lines.push('');
   lines.push(escposPlainLineCenter(paper, sanitizeReceiptText(input.footer ?? 'Thank you!')));
-  for (const line of wrapReceiptText('Note: Customers must count and check their clothes at collection.', w)) {
+  for (const line of wrapReceiptText('Note: Please count and check all clothes at collection. The vendor will not be liable for shortages or damage reported later.', w)) {
     lines.push(escposPlainLineCenter(paper, line));
   }
   return lines.join('\n');
