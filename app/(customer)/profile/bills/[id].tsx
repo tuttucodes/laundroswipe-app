@@ -131,6 +131,9 @@ export default function CustomerBillDetail() {
               Cancelled {new Date(bill.cancelled_at).toLocaleString()}
             </Text>
           ) : null}
+          <Text className="mt-3 text-center text-xs text-ink-2">
+            Note: Customers must count and check their clothes at collection.
+          </Text>
         </Container>
       </ScrollView>
 

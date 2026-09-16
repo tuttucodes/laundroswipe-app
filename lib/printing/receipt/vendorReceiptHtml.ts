@@ -130,6 +130,7 @@ export function renderThermalReceiptHtml(data: ThermalReceiptData): string {
     <div class="trc-sumRow trc-total"><span>TOTAL</span><span class="trc-mono">${esc(money(total))}</span></div>
   </section>
   <p class="trc-foot">${esc(data.footer ?? 'Thank you!')}</p>
+  <p class="trc-foot">Note: Customers must count and check their clothes at collection.</p>
 </div>
 </body>
 </html>`;

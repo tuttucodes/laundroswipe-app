@@ -189,6 +189,9 @@ export default function VendorBillDetail() {
             Cancelled {new Date(detail.cancelled_at).toLocaleString()}
           </Text>
         ) : null}
+        <Text className="mt-3 text-center text-xs text-ink-2">
+          Note: Customers must count and check their clothes at collection.
+        </Text>
       </ScrollView>
 
       <View className="absolute inset-x-0 bottom-0 border-t border-border bg-surface px-5 py-4">
